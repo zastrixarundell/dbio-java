@@ -74,7 +74,7 @@ public class WebsiteInfoFetcher
                 CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
-            HttpGet get = new HttpGet("https://api.discord.bio/v1/user/topVoted");
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/topUpvoted");
             HttpResponse response = client.execute(get);
 
             JsonParser parser = new JsonParser();

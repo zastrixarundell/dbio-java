@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/WebsiteInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/WebsiteInfoFetcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +46,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -65,7 +66,38 @@
       <command value="mvn test -B" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DbioTest.getAsyncUserCount (1)">
+  <component name="RunManager" selected="JUnit.UserTests">
+    <configuration name="DbioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbioTest.getAsyncTopUpvotedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
+      <option name="METHOD_NAME" value="getAsyncTopUpvotedUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DbioTest.getAsyncUserCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
@@ -82,23 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbioTest.getAsyncUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
-      <option name="METHOD_NAME" value="getAsyncUserInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OnlineTest.canGetInfoOnline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OnlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
@@ -108,13 +124,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.OnlineTest" />
-      <option name="METHOD_NAME" value="canGetInfoOnline" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTests.avatarIsCorrectWithExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
@@ -124,35 +139,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.UserTests" />
-      <option name="METHOD_NAME" value="avatarIsCorrectWithExtension" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTests.canExtractFromPayload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.UserTests" />
-      <option name="METHOD_NAME" value="canExtractFromPayload" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTests" />
+        <item itemvalue="JUnit.OnlineTest" />
+        <item itemvalue="JUnit.DbioTest" />
+        <item itemvalue="JUnit.DbioTest.getAsyncTopUpvotedUsers" />
         <item itemvalue="JUnit.DbioTest.getAsyncUserCount (1)" />
-        <item itemvalue="JUnit.DbioTest.getAsyncUserInfo" />
-        <item itemvalue="JUnit.OnlineTest.canGetInfoOnline" />
-        <item itemvalue="JUnit.UserTests.avatarIsCorrectWithExtension" />
-        <item itemvalue="JUnit.UserTests.canExtractFromPayload" />
       </list>
     </recent_temporary>
   </component>
@@ -193,50 +191,50 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588365676596" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588367162184">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588367640086">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367162184" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588367162183">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367640086" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588367640085">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367162183" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588367162182">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367640085" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588367640085">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367162182" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588367162184">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367640085" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588367640086">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367162184" />
-    <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588366098682">
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367640086" />
+    <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588366098682" />
-    <state width="1874" height="388" key="GridCell.Tab.1.center" timestamp="1588366098681">
+    <state width="1874" height="388" key="GridCell.Tab.1.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state width="1874" height="388" key="GridCell.Tab.1.center" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588366098681" />
-    <state width="1874" height="388" key="GridCell.Tab.1.left" timestamp="1588366098681">
+    <state width="1874" height="388" key="GridCell.Tab.1.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state width="1874" height="388" key="GridCell.Tab.1.left" timestamp="1588367621726">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588366098681" />
-    <state width="1874" height="388" key="GridCell.Tab.1.right" timestamp="1588366098681">
+    <state width="1874" height="388" key="GridCell.Tab.1.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621726" />
+    <state width="1874" height="388" key="GridCell.Tab.1.right" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588366098681" />
-    <state x="443" y="160" width="1028" height="845" key="SettingsEditor" timestamp="1588365679664">
+    <state width="1874" height="388" key="GridCell.Tab.1.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state x="443" y="160" width="1028" height="845" key="SettingsEditor" timestamp="1588367664230">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="443" y="160" width="1028" height="845" key="SettingsEditor/0.0.1920.1163@0.0.1920.1163" timestamp="1588365679664" />
+    <state x="443" y="160" width="1028" height="845" key="SettingsEditor/0.0.1920.1163@0.0.1920.1163" timestamp="1588367664230" />
     <state x="639" y="410" key="com.intellij.ide.util.TipDialog" timestamp="1588366118452">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="639" y="410" key="com.intellij.ide.util.TipDialog/0.0.1920.1163@0.0.1920.1163" timestamp="1588366118452" />
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588366011730">
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588367311278">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588366011730" />
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588367311278" />
     <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1588366339001">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
