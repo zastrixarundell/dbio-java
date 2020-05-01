@@ -31,20 +31,6 @@ public class UserTests
         return parser.parse(testString).getAsJsonObject();
     }
 
-    /*
-
-    public static void main(String[] args)
-    {
-        String data = "{\"settings\":{\"name\":\"zastrix\",\"user_id\":\"192300733234675722\",\"premium_status\":0,\"verified\":0,\"upvotes\":0,\"created_at\":\"2020-04-28T10:35:48.000Z\",\"status\":null,\"description\":\"Backend software developer in Rails and Phoenix. I enjoy helping people out and creating discord bots. You can check out my work on github.com/zastrixarundell. I can as well sell my services of API management and Discord bots, PM me if you want. \",\"location\":\"Novi Sad, Serbia\",\"gender\":0,\"birthday\":\"2000-09-14T00:00:00.000Z\",\"email\":null,\"occupation\":\"Backend Developer\",\"banner\":\"https://s3.eu-west-2.amazonaws.com/discord.bio/banners/192300733234675722\",\"staff\":0},\"discord\":{\"id\":\"192300733234675722\",\"username\":\"Zastrix\",\"avatar\":\"4b63183d13632ebcb89a79c3031f5105\",\"discriminator\":\"9202\",\"public_flags\":131136}}";
-        JsonParser parser = new JsonParser();
-        JsonObject object = parser.parse(data).getAsJsonObject();
-
-        User user = new User(object);
-
-        System.out.println(user.discord.getAvatarUrl("png"));
-    }
-     */
-
     @Test
     public void canExtractFromPayload()
     {
