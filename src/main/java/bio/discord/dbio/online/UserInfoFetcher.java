@@ -31,6 +31,12 @@ import java.util.Optional;
 
 public class UserInfoFetcher
 {
+
+    /**
+     * The information about the user from the API. This call is sync on the thread.
+     * @param userId The ID of the user.
+     * @return An optional which is empty if there is an error while fetching the data.
+     */
     public static Optional<User> getSingletonInformation(String userId)
     {
         try (
@@ -51,6 +57,11 @@ public class UserInfoFetcher
         return Optional.empty();
     }
 
+    /**
+     * Get the connection which the user has on the website. Call is sync here.
+     * @param userId The ID of the user.
+     * @return An optional which is empty if there is an error while fetching the data.
+     */
     public static Optional<DbioConnections> getUserInfoConnections(String userId)
     {
         try (
@@ -71,6 +82,11 @@ public class UserInfoFetcher
         return Optional.empty();
     }
 
+    /**
+     * Get a list discord connections which the user has. Call is sync here.
+     * @param userId The ID of the user.
+     * @return An optional which is empty if there is an error while fetching the data
+     */
     public static Optional<List<DiscordConnection>> getDiscordConnections(String userId)
     {
         try (

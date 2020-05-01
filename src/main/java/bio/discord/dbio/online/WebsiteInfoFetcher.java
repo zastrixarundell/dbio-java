@@ -29,6 +29,11 @@ import java.util.Optional;
 
 public class WebsiteInfoFetcher
 {
+
+    /**
+     * Get the total user count on the website.
+     * @return An optional containing in integer for the amount of users using the website.
+     */
     public static Optional<Integer> getTotalUserCount ()
     {
         try (
@@ -49,6 +54,10 @@ public class WebsiteInfoFetcher
         return Optional.empty();
     }
 
+    /**
+     * Get a the list of top-upvoted users on the website.
+     * @return An optional containing a list of top-upvoted users.
+     */
     public static Optional<List<UpvotedUser>> getTopUpvotedUsers ()
     {
         try (

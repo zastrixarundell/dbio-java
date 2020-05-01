@@ -42,27 +42,47 @@ public class DbioConnections
         linkedin = Helpers.getNullableStringFromJson(nameHolder.get("name"));
     }
 
-    public String getGithub()
+    /**
+     * Get the linked github connection name to discord.bio.
+     * @return The linked github name.
+     */
+    public String getGithubName()
     {
         return github;
     }
 
+    /**
+     * The url of the website connected to discord.bio.
+     * @return URL of the linked webiste.
+     */
     public String getWebsite()
     {
         return website;
     }
 
-    public String getInstagram()
+    /**
+     * The name of the instagram account connected to discord.bio.
+     * @return Instagram account name.
+     */
+    public String getInstagramName()
     {
         return instagram;
     }
 
-    public String getSnapchat()
+    /**
+     * The name of the snapchat account connected to discord.bio.
+     * @return Snapchat account name.
+     */
+    public String getSnapchatName()
     {
         return snapchat;
     }
 
-    public String getLinkedin()
+    /**
+     * The name of the linked LinkedIn account connected to discord.bio.
+     * @return LinkedIn acocunt name.
+     */
+    public String getLinkedinName()
     {
         return linkedin;
     }

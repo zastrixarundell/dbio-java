@@ -47,43 +47,75 @@ public class UpvotedUser
         name = Helpers.getNullableStringFromJson(user.get("name"));
     }
 
+    /**
+     * Get all of the relevant Discord information for the user.
+     * @return DiscordInformation of the user.
+     */
     public DiscordInformation getDiscordInformation()
     {
         return discordInformation;
     }
 
+    /**
+     * 0-indexed position of where the user is located in the list of top upvoted users.
+     * @return Integer representing array index.
+     */
     public int getId()
     {
         return id;
     }
 
+    /**
+     * The ID of the user.
+     * @return ID of the user.
+     */
     public String getUserId()
     {
         return userId;
     }
 
+    /**
+     * The description which the user has.
+     * @return The description which the user has.
+     */
     public String getDescription()
     {
         return description;
     }
 
+    /**
+     * The name which the user has.
+     * @return The name which the user has.
+     */
     public String getName()
     {
         return name;
     }
 
+    /**
+     * The number of upvotes the user has.
+     * @return The number of upvotes the user has.
+     */
     public long getUpvotes()
     {
         return upvotes;
     }
 
-    public boolean isVerified()
-    {
-        return verified;
-    }
-
+    /**
+     * See if the user is premium on discord.bio.
+     * @return Boolean if the user is premium on discord.bio.
+     */
     public boolean isPremium()
     {
         return premium;
+    }
+
+    /**
+     * See if the user is verified on discord.bio.
+     * @return Boolean if the user is verified on discord.bio.
+     */
+    public boolean isVerified()
+    {
+        return verified;
     }
 }

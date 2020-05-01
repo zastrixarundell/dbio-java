@@ -34,27 +34,48 @@ public class DiscordConnection
         icon = payload.get("icon").getAsString();
     }
 
+    /**
+     * Deprecated method for getting the connection type. It will return a string now but
+     * this will soon be changed to an Enum.
+     * @return The connection type name.
+     */
     @Deprecated
     public String getConnectionType()
     {
         return connectionType;
     }
 
+    /**
+     * The id of the connected account.
+     * @return ID of the connected account.
+     */
     public int getId()
     {
         return id;
     }
 
+    /**
+     * The name of the connected account.
+     * @return String of the account name.
+     */
     public String getName()
     {
         return name;
     }
 
+    /**
+     * The url of the connected account.
+     * @return String url of the connected account.
+     */
     public String getUrl()
     {
         return url;
     }
 
+    /**
+     * The icon of the connection.
+     * @return String name of the icon.
+     */
     public String getIcon()
     {
         return icon;
