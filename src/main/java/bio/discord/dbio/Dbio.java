@@ -16,7 +16,7 @@
 
 package bio.discord.dbio;
 
-import bio.discord.dbio.entities.DbioConnections;
+import bio.discord.dbio.entities.connections.DbioConnections;
 import bio.discord.dbio.entities.UpvotedUser;
 import bio.discord.dbio.entities.User;
 import bio.discord.dbio.online.UserInfoFetcher;

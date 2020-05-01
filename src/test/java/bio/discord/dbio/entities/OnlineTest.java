@@ -16,6 +16,7 @@
 
 package bio.discord.dbio.entities;
 
+import bio.discord.dbio.entities.connections.DbioConnections;
 import bio.discord.dbio.online.UserInfoFetcher;
 import org.junit.Test;
 

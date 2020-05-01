@@ -14,7 +14,7 @@
  *   0. You just DO WHAT THE FUCK YOU WANT TO.
  */
 
-package bio.discord.dbio.entities;
+package bio.discord.dbio.entities.connections;
 
 import bio.discord.dbio.Helpers;
 import com.google.gson.JsonObject;

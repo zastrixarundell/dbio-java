@@ -17,6 +17,7 @@
 package bio.discord.dbio.entities;
 
 import bio.discord.dbio.Dbio;
+import bio.discord.dbio.entities.connections.DbioConnections;
 import org.junit.Test;
 
 import java.util.List;
