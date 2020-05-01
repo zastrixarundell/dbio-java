@@ -14,8 +14,9 @@
  *   0. You just DO WHAT THE FUCK YOU WANT TO.
  */
 
-package bio.discord.dbio.entities;
+package bio.discord.dbio.tests;
 
+import bio.discord.dbio.entities.User;
 import bio.discord.dbio.entities.connections.DbioConnections;
 import bio.discord.dbio.online.UserInfoFetcher;
 import org.junit.Test;
