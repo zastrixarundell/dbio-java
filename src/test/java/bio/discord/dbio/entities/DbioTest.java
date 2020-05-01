@@ -18,6 +18,7 @@ package bio.discord.dbio.entities;
 
 import bio.discord.dbio.Dbio;
 import bio.discord.dbio.entities.connections.DbioConnections;
+import bio.discord.dbio.entities.connections.DiscordConnection;
 import org.junit.Test;
 
 import java.util.List;
@@ -37,7 +38,7 @@ public class DbioTest
     @Test
     public void getAsyncUserConnections() throws ExecutionException, InterruptedException
     {
-       Optional<DbioConnections> connectionsOptional = Dbio.getUserConnections("192300733234675722").get();
+       Optional<DbioConnections> connectionsOptional = Dbio.getUserDbioConnections("192300733234675722").get();
        assert connectionsOptional.isPresent();
     }
 
@@ -53,6 +54,14 @@ public class DbioTest
     {
         Optional<List<UpvotedUser>> userList = Dbio.getTopUpvotedUsers().get();
         assert userList.isPresent();
+    }
+
+    @Test
+    public void getAsyncDiscordUserConnections() throws ExecutionException, InterruptedException
+    {
+        Optional<List<DiscordConnection>> connectionList = Dbio.getUserDiscordConnections("192300733234675722").get();
+
+        assert connectionList.isPresent();
     }
 
 }

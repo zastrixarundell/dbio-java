@@ -17,8 +17,8 @@
 package bio.discord.dbio.online;
 
 import bio.discord.dbio.entities.connections.DbioConnections;
-import bio.discord.dbio.entities.UpvotedUser;
 import bio.discord.dbio.entities.User;
+import bio.discord.dbio.entities.connections.DiscordConnection;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -34,7 +34,7 @@ public class UserInfoFetcher
     public static Optional<User> getSingletonInformation(String userId)
     {
         try (
-            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/details/" + userId).openStream());
+            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/details/" + userId).openStream())
         )
         {
             JsonParser parser = new JsonParser();
@@ -54,7 +54,7 @@ public class UserInfoFetcher
     public static Optional<DbioConnections> getUserInfoConnections(String userId)
     {
         try (
-            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/connections/" + userId).openStream());
+            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/connections/" + userId).openStream())
         )
         {
             JsonParser parser = new JsonParser();
@@ -71,30 +71,10 @@ public class UserInfoFetcher
         return Optional.empty();
     }
 
-    public static Optional<Integer> getTotalUserCount()
+    public static Optional<List<DiscordConnection>> getDiscordConnections(String userId)
     {
         try (
-                InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/totalUsers").openStream());
-        )
-        {
-            JsonParser parser = new JsonParser();
-            JsonObject object = parser.parse(reader).getAsJsonObject();
-
-            if (object.get("success").getAsBoolean())
-                return Optional.of(object.get("payload").getAsInt());
-        }
-        catch (Exception ignore)
-        {
-
-        }
-
-        return Optional.empty();
-    }
-
-    public static Optional<List<UpvotedUser>> getTopUpvotedUsers()
-    {
-        try (
-                InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/topUpvoted").openStream());
+            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/discordConnections/" + userId).openStream())
         )
         {
             JsonParser parser = new JsonParser();
@@ -102,19 +82,19 @@ public class UserInfoFetcher
 
             if (object.get("success").getAsBoolean())
             {
-                JsonArray users = object.getAsJsonArray("payload");
-                ArrayList<UpvotedUser> userArrayList = new ArrayList<>();
+                JsonArray connections = object.getAsJsonArray("payload");
+                ArrayList<DiscordConnection> connectionArrayList = new ArrayList<>();
 
-                users.forEach(user ->
-                    userArrayList.add(new UpvotedUser(user.getAsJsonObject()))
+                connections.forEach(connection ->
+                        connectionArrayList.add(new DiscordConnection(connection.getAsJsonObject()))
                 );
 
-                return Optional.of(userArrayList);
+                return Optional.of(connectionArrayList);
             }
         }
-        catch (Exception e)
+        catch (Exception ignore)
         {
-            e.printStackTrace();
+
         }
 
         return Optional.empty();

@@ -19,7 +19,9 @@ package bio.discord.dbio;
 import bio.discord.dbio.entities.connections.DbioConnections;
 import bio.discord.dbio.entities.UpvotedUser;
 import bio.discord.dbio.entities.User;
+import bio.discord.dbio.entities.connections.DiscordConnection;
 import bio.discord.dbio.online.UserInfoFetcher;
+import bio.discord.dbio.online.WebsiteInfoFetcher;
 
 import java.util.List;
 import java.util.Optional;
@@ -33,24 +35,24 @@ public class Dbio
         return CompletableFuture.supplyAsync(() -> UserInfoFetcher.getSingletonInformation(userId));
     }
 
-    public static CompletableFuture<Optional<DbioConnections>> getUserConnections(String userId)
+    public static CompletableFuture<Optional<DbioConnections>> getUserDbioConnections(String userId)
     {
         return CompletableFuture.supplyAsync(() -> UserInfoFetcher.getUserInfoConnections(userId));
     }
 
-    public static CompletableFuture<Object> getDiscordConnections(String userId)
+    public static CompletableFuture<Optional<List<DiscordConnection>>> getUserDiscordConnections(String userId)
     {
-        return CompletableFuture.completedFuture(userId);
+        return CompletableFuture.supplyAsync(() -> UserInfoFetcher.getDiscordConnections(userId));
     }
 
     public static CompletableFuture<Optional<Integer>> getTotalUserCount()
     {
-        return CompletableFuture.supplyAsync(UserInfoFetcher::getTotalUserCount);
+        return CompletableFuture.supplyAsync(WebsiteInfoFetcher::getTotalUserCount);
     }
 
     public static CompletableFuture<Optional<List<UpvotedUser>>> getTopUpvotedUsers()
     {
-        return CompletableFuture.supplyAsync(UserInfoFetcher::getTopUpvotedUsers);
+        return CompletableFuture.supplyAsync(WebsiteInfoFetcher::getTopUpvotedUsers);
     }
 
 }

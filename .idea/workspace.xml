@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/connections/DiscordConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/Dbio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/Dbio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/entities/DbioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/entities/DbioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
       <recent name="bio.discord.dbio.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DbioTest.getAsyncTopUpvotedUsers">
+  <component name="RunManager" selected="JUnit.DbioTest.getAsyncDiscordUserConnections">
     <configuration name="DbioTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <option name="TEST_OBJECT" value="pattern" />
@@ -78,6 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DbioTest.getAsyncDiscordUserConnections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
+      <option name="METHOD_NAME" value="getAsyncDiscordUserConnections" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DbioTest.getAsyncTopUpvotedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
@@ -89,22 +107,6 @@
       <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
       <option name="METHOD_NAME" value="getAsyncTopUpvotedUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DbioTest.getAsyncUserConnections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.entities.connections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
-      <option name="METHOD_NAME" value="getAsyncUserConnections" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbioTest.getAsyncDiscordUserConnections" />
         <item itemvalue="JUnit.DbioTest.getAsyncTopUpvotedUsers" />
         <item itemvalue="JUnit.DbioTest.getAsyncUserCount" />
         <item itemvalue="JUnit.DbioTest and 2 more" />
         <item itemvalue="JUnit.DbioTest" />
-        <item itemvalue="JUnit.DbioTest.getAsyncUserConnections" />
       </list>
     </recent_temporary>
   </component>
@@ -162,22 +164,22 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="727" y="443" width="465" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1163@0.0.1920.1163" timestamp="1588358519768" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588358447859">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588359444064">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588358447859" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588358447858">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588359444064" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588359444062">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588358447858" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588358447857">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588359444062" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588359444062">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588358447857" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588358447859">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588359444062" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588359444063">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588358447859" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588359444063" />
     <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588357914386">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
