@@ -28,16 +28,20 @@ public class User
 
     public User(JsonObject payload)
     {
-
+        discord = new DiscordInformation(payload.getAsJsonObject("discord"));
     }
 
-    public JsonObject getSettings()
-    {
-        return settings;
-    }
-
-    public JsonObject getDiscord()
+    public DiscordInformation getDiscord()
     {
         return discord;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "User{" +
+                "discord=" + discord.toString() +
+                //", settings=" + settings +
+                '}';
     }
 }

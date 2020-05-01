@@ -94,4 +94,16 @@ public class DiscordInformation
         extension = extension == null || extension.equals("") ? "png" : extension;
         return "https://cdn.discordapp.com/avatars/" + id + "/" + avatar + "." + extension;
     }
+
+    @Override
+    public String toString()
+    {
+        return "DiscordInformation{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", discriminator='" + discriminator + '\'' +
+                ", flags=" + flags +
+                '}';
+    }
 }
