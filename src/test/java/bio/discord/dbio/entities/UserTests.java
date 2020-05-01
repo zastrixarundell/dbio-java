@@ -16,6 +16,7 @@
 
 package bio.discord.dbio.entities;
 
+import bio.discord.dbio.entities.user.DiscordInformation;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.junit.Test;
@@ -31,17 +32,31 @@ public class UserTests
         return parser.parse(testString).getAsJsonObject();
     }
 
+    private static User createFakeUser()
+    {
+        return new User(fakeApiResponse().getAsJsonObject("payload"));
+    }
+
     @Test
     public void canExtractFromPayload()
     {
-        new User(fakeApiResponse().getAsJsonObject("payload"));
+        createFakeUser();
     }
 
     @Test
     public void canShowDiscordUserInformation()
     {
-        User user = new User(fakeApiResponse().getAsJsonObject("payload"));
-        assert user.discord.getFlags() == 131136;
+        User user = createFakeUser();
+        assert user.getDiscordInformation().getFlags() == 131136;
+    }
+
+    @Test
+    public void avatarIsCorrectWithExtension()
+    {
+        User user = createFakeUser();
+        DiscordInformation discordInformation = user.getDiscordInformation();
+
+        assert discordInformation.getAvatarUrl("png").equals("https://cdn.discordapp.com/avatars/192300733234675722/4b63183d13632ebcb89a79c3031f5105.png");
     }
 
 }

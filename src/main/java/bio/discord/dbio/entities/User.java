@@ -23,15 +23,15 @@ import com.google.gson.JsonObject;
 public class User
 {
 
-    DiscordInformation discord;
-    SettingsInformation settings;
+    private DiscordInformation discord;
+    private SettingsInformation settings;
 
     public User(JsonObject payload)
     {
         discord = new DiscordInformation(payload.getAsJsonObject("discord"));
     }
 
-    public DiscordInformation getDiscord()
+    public DiscordInformation getDiscordInformation()
     {
         return discord;
     }
