@@ -22,9 +22,12 @@ import bio.discord.dbio.entities.connections.DiscordConnection;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -40,11 +43,18 @@ public class UserInfoFetcher
     public static Optional<User> getSingletonInformation(String userId)
     {
         try (
-            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/details/" + userId).openStream())
+            CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/user/details/" + userId);
+            HttpResponse response = client.execute(get);
+
             JsonParser parser = new JsonParser();
+            InputStreamReader reader = new InputStreamReader(response.getEntity().getContent());
+
             JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            reader.close();
 
             if (object.get("success").getAsBoolean())
                 return Optional.of(new User(object.getAsJsonObject("payload")));
@@ -65,11 +75,18 @@ public class UserInfoFetcher
     public static Optional<DbioConnections> getUserInfoConnections(String userId)
     {
         try (
-            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/connections/" + userId).openStream())
+                CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/user/connections/" + userId);
+            HttpResponse response = client.execute(get);
+
             JsonParser parser = new JsonParser();
+            InputStreamReader reader = new InputStreamReader(response.getEntity().getContent());
+
             JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            reader.close();
 
             if (object.get("success").getAsBoolean())
                 return Optional.of(new DbioConnections(object.getAsJsonObject("payload")));
@@ -90,11 +107,18 @@ public class UserInfoFetcher
     public static Optional<List<DiscordConnection>> getDiscordConnections(String userId)
     {
         try (
-            InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/user/discordConnections/" + userId).openStream())
+                CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/user/discordConnections/" + userId);
+            HttpResponse response = client.execute(get);
+
             JsonParser parser = new JsonParser();
+            InputStreamReader reader = new InputStreamReader(response.getEntity().getContent());
+
             JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            reader.close();
 
             if (object.get("success").getAsBoolean())
             {

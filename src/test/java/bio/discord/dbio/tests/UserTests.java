@@ -22,6 +22,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class UserTests
 {
 
@@ -56,7 +58,7 @@ public class UserTests
         User user = createFakeUser();
         DiscordInformation discordInformation = user.getDiscordInformation();
 
-        assert discordInformation.getAvatarUrl("png").equals("https://cdn.discordapp.com/avatars/192300733234675722/4b63183d13632ebcb89a79c3031f5105.png");
+        assertEquals("https://cdn.discordapp.com/avatars/192300733234675722/4b63183d13632ebcb89a79c3031f5105.png", discordInformation.getAvatarUrl("png"));
     }
 
     @Test
@@ -65,7 +67,7 @@ public class UserTests
         User user = createFakeUser();
         DiscordInformation information = user.getDiscordInformation();
 
-        assert information.getFullUserUsername().equals("Zastrix#9202");
+        assertEquals("Zastrix#9202", information.getFullUserUsername());
     }
 
 }

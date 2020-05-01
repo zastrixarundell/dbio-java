@@ -27,6 +27,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
+import static org.junit.Assert.assertTrue;
+
 public class DbioTest
 {
 
@@ -34,28 +36,28 @@ public class DbioTest
     public void getAsyncUserInfo() throws ExecutionException, InterruptedException
     {
         Optional<User> userOptional = Dbio.getUserDetails("192300733234675722").get();
-        assert userOptional.isPresent();
+        assertTrue(userOptional.isPresent());
     }
 
     @Test
     public void getAsyncUserConnections() throws ExecutionException, InterruptedException
     {
        Optional<DbioConnections> connectionsOptional = Dbio.getUserDbioConnections("192300733234675722").get();
-       assert connectionsOptional.isPresent();
+       assertTrue(connectionsOptional.isPresent());
     }
 
     @Test
     public void getAsyncUserCount() throws ExecutionException, InterruptedException
     {
         Optional<Integer> userCount = Dbio.getTotalUserCount().get();
-        assert userCount.isPresent();
+        assertTrue(userCount.isPresent());
     }
 
     @Test
     public void getAsyncTopUpvotedUsers() throws ExecutionException, InterruptedException
     {
         Optional<List<UpvotedUser>> userList = Dbio.getTopUpvotedUsers().get();
-        assert userList.isPresent();
+        assertTrue(userList.isPresent());
     }
 
     @Test
@@ -63,7 +65,7 @@ public class DbioTest
     {
         Optional<List<DiscordConnection>> connectionList = Dbio.getUserDiscordConnections("192300733234675722").get();
 
-        assert connectionList.isPresent();
+        assertTrue(connectionList.isPresent());
     }
 
 }

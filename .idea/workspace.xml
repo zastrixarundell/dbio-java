@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Dbio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Helpers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/UpvotedUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/User$UserGender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/connections/DbioConnections.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/connections/DiscordConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/DiscordInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/SettingsInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/online/UserInfoFetcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/DbioTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/OnlineTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/UserTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,19 +30,22 @@
     </option>
   </component>
   <component name="ProjectId" id="1bJL6BKtDk1nwA6ZpeO3F5YdA93" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -68,46 +58,25 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DbioTest.getAsyncDiscordUserConnections">
-    <configuration name="DbioTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="bio.discord.dbio.entities.DbioTest" />
-        <pattern testClass="bio.discord.dbio.entities.OnlineTest" />
-        <pattern testClass="bio.discord.dbio.entities.UserTests" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+      <command value="mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V" />
+      <command value="mvn test -B" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserTests">
     <configuration name="DbioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.entities.connections.*" />
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DbioTest.getAsyncDiscordUserConnections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
-      <option name="METHOD_NAME" value="getAsyncDiscordUserConnections" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,41 +85,71 @@
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.entities.connections.*" />
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
       <option name="METHOD_NAME" value="getAsyncTopUpvotedUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbioTest.getAsyncUserCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbioTest.getAsyncUserCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.entities.connections.*" />
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.DbioTest" />
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
       <option name="METHOD_NAME" value="getAsyncUserCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OnlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.OnlineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.UserTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DbioTest.getAsyncDiscordUserConnections" />
-        <item itemvalue="JUnit.DbioTest.getAsyncTopUpvotedUsers" />
-        <item itemvalue="JUnit.DbioTest.getAsyncUserCount" />
-        <item itemvalue="JUnit.DbioTest and 2 more" />
+        <item itemvalue="JUnit.UserTests" />
+        <item itemvalue="JUnit.OnlineTest" />
         <item itemvalue="JUnit.DbioTest" />
+        <item itemvalue="JUnit.DbioTest.getAsyncTopUpvotedUsers" />
+        <item itemvalue="JUnit.DbioTest.getAsyncUserCount (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -167,11 +166,14 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="244" width="804" height="677" key="#Project_Structure" timestamp="1588349270366">
+    <state x="555" y="244" width="804" height="677" key="#Project_Structure" timestamp="1588365694344">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="555" y="244" width="804" height="677" key="#Project_Structure/0.0.1920.1163@0.0.1920.1163" timestamp="1588349270366" />
+    <state x="555" y="244" width="804" height="677" key="#Project_Structure/0.0.1920.1163@0.0.1920.1163" timestamp="1588365694344" />
     <state x="768" y="286" width="497" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1588359023814">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
@@ -184,49 +186,57 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="704" y="308" width="506" height="549" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1163@0.0.1920.1163" timestamp="1588360996127" />
-    <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl" timestamp="1588360995343">
+    <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl" timestamp="1588365676596">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588360995343" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588361253336">
+    <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588365676596" />
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588367811766">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253336" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588361253334">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367811766" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588367811765">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253334" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588361253333">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367811765" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588367811764">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253333" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588361253335">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367811764" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588367811765">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253335" />
-    <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588357914386">
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367811765" />
+    <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588357914386" />
-    <state width="1874" height="388" key="GridCell.Tab.1.center" timestamp="1588357914384">
+    <state width="1874" height="388" key="GridCell.Tab.1.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state width="1874" height="388" key="GridCell.Tab.1.center" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588357914384" />
-    <state width="1874" height="388" key="GridCell.Tab.1.left" timestamp="1588357914383">
+    <state width="1874" height="388" key="GridCell.Tab.1.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state width="1874" height="388" key="GridCell.Tab.1.left" timestamp="1588367621726">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588357914383" />
-    <state width="1874" height="388" key="GridCell.Tab.1.right" timestamp="1588357914385">
+    <state width="1874" height="388" key="GridCell.Tab.1.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621726" />
+    <state width="1874" height="388" key="GridCell.Tab.1.right" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="388" key="GridCell.Tab.1.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588357914385" />
-    <state x="443" y="160" width="1028" height="845" key="SettingsEditor" timestamp="1588346712325">
+    <state width="1874" height="388" key="GridCell.Tab.1.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367621727" />
+    <state x="443" y="160" width="1028" height="845" key="SettingsEditor" timestamp="1588367664230">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="443" y="160" width="1028" height="845" key="SettingsEditor/0.0.1920.1163@0.0.1920.1163" timestamp="1588346712325" />
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588361100400">
+    <state x="443" y="160" width="1028" height="845" key="SettingsEditor/0.0.1920.1163@0.0.1920.1163" timestamp="1588367664230" />
+    <state x="639" y="410" key="com.intellij.ide.util.TipDialog" timestamp="1588366118452">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588361100400" />
+    <state x="639" y="410" key="com.intellij.ide.util.TipDialog/0.0.1920.1163@0.0.1920.1163" timestamp="1588366118452" />
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588367780956">
+      <screen x="0" y="0" width="1920" height="1163" />
+    </state>
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588367780956" />
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1588366339001">
+      <screen x="0" y="0" width="1920" height="1163" />
+    </state>
+    <state x="623" y="260" width="672" height="678" key="search.everywhere.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588366339001" />
   </component>
 </project>

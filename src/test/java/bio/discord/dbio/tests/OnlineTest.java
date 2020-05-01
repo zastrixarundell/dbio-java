@@ -23,13 +23,15 @@ import org.junit.Test;
 
 import java.util.Optional;
 
+import static org.junit.Assert.assertTrue;
+
 public class OnlineTest
 {
 
     @Test
     public void canGetInfoOnline()
     {
-        assert UserInfoFetcher.getSingletonInformation("192300733234675722").isPresent();
+        assertTrue(UserInfoFetcher.getSingletonInformation("192300733234675722").isPresent());
     }
 
     @Test
@@ -43,7 +45,7 @@ public class OnlineTest
     @Test
     public void canGetUserInfoConnections()
     {
-        assert UserInfoFetcher.getUserInfoConnections("192300733234675722").isPresent();
+        assertTrue(UserInfoFetcher.getUserInfoConnections("192300733234675722").isPresent());
     }
 
     @Test

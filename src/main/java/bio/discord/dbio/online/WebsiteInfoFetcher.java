@@ -20,9 +20,12 @@ import bio.discord.dbio.entities.UpvotedUser;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -37,11 +40,18 @@ public class WebsiteInfoFetcher
     public static Optional<Integer> getTotalUserCount ()
     {
         try (
-                InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/totalUsers").openStream())
+                CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/totalUsers");
+            HttpResponse response = client.execute(get);
+
             JsonParser parser = new JsonParser();
+            InputStreamReader reader = new InputStreamReader(response.getEntity().getContent());
+
             JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            reader.close();
 
             if (object.get("success").getAsBoolean())
                 return Optional.of(object.get("payload").getAsInt());
@@ -61,11 +71,18 @@ public class WebsiteInfoFetcher
     public static Optional<List<UpvotedUser>> getTopUpvotedUsers ()
     {
         try (
-                InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/topUpvoted").openStream())
+                CloseableHttpClient client = HttpClientBuilder.create().build()
         )
         {
+            HttpGet get = new HttpGet("https://api.discord.bio/v1/topUpvoted");
+            HttpResponse response = client.execute(get);
+
             JsonParser parser = new JsonParser();
+            InputStreamReader reader = new InputStreamReader(response.getEntity().getContent());
+
             JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            reader.close();
 
             if (object.get("success").getAsBoolean())
             {
