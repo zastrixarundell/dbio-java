@@ -17,12 +17,16 @@
 package bio.discord.dbio.online;
 
 import bio.discord.dbio.entities.DbioConnections;
+import bio.discord.dbio.entities.UpvotedUser;
 import bio.discord.dbio.entities.User;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class UserInfoFetcher
@@ -82,6 +86,35 @@ public class UserInfoFetcher
         catch (Exception ignore)
         {
 
+        }
+
+        return Optional.empty();
+    }
+
+    public static Optional<List<UpvotedUser>> getTopUpvotedUsers()
+    {
+        try (
+                InputStreamReader reader = new InputStreamReader(new URL("https://api.discord.bio/v1/topUpvoted").openStream());
+        )
+        {
+            JsonParser parser = new JsonParser();
+            JsonObject object = parser.parse(reader).getAsJsonObject();
+
+            if (object.get("success").getAsBoolean())
+            {
+                JsonArray users = object.getAsJsonArray("payload");
+                ArrayList<UpvotedUser> userArrayList = new ArrayList<>();
+
+                users.forEach(user ->
+                    userArrayList.add(new UpvotedUser(user.getAsJsonObject()))
+                );
+
+                return Optional.of(userArrayList);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
         }
 
         return Optional.empty();

@@ -19,6 +19,7 @@ package bio.discord.dbio.entities;
 import bio.discord.dbio.Dbio;
 import org.junit.Test;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
@@ -44,6 +45,13 @@ public class DbioTest
     {
         Optional<Integer> userCount = Dbio.getTotalUserCount().get();
         assert userCount.isPresent();
+    }
+
+    @Test
+    public void getAsyncTopUpvotedUsers() throws ExecutionException, InterruptedException
+    {
+        Optional<List<UpvotedUser>> userList = Dbio.getTopUpvotedUsers().get();
+        assert userList.isPresent();
     }
 
 }

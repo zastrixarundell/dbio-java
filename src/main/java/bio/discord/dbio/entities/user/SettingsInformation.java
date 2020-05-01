@@ -29,7 +29,7 @@ public class SettingsInformation
     private String name, userId, description, location, email, occupation, banner;
     private boolean premium, verified, staff;
     private long upvotes;
-    private Date createdAt, birthday;
+    private Date createdAt = null, birthday = null;
     private User.UserGender gender;
 
     /**
@@ -44,11 +44,17 @@ public class SettingsInformation
         userId = Helpers.getNullableStringFromJson(settings.get("user_id"));
         verified = settings.get("verified").getAsInt() == 1;
         upvotes = settings.get("upvotes").getAsLong();
-        createdAt = Instant.parse(Helpers.getNullableStringFromJson(settings.get("created_at"))).toDate();
+
+        if(Helpers.getNullableStringFromJson(settings.get("created_at")) != null)
+            createdAt = Instant.parse(Helpers.getNullableStringFromJson(settings.get("created_at"))).toDate();
+
         description = Helpers.getNullableStringFromJson(settings.get("description"));
         location = Helpers.getNullableStringFromJson(settings.get("location"));
         gender = decodeInt(settings.get("gender").getAsInt());
-        birthday = Instant.parse(Helpers.getNullableStringFromJson(settings.get("birthday"))).toDate();
+
+        if(Helpers.getNullableStringFromJson(settings.get("birthday")) != null)
+            birthday = Instant.parse(Helpers.getNullableStringFromJson(settings.get("birthday"))).toDate();
+
         email = Helpers.getNullableStringFromJson(settings.get("email"));
         occupation = Helpers.getNullableStringFromJson(settings.get("occupation"));
         banner = Helpers.getNullableStringFromJson(settings.get("banner"));

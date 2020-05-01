@@ -19,8 +19,6 @@ package bio.discord.dbio.entities;
 import bio.discord.dbio.online.UserInfoFetcher;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
 public class OnlineTest
