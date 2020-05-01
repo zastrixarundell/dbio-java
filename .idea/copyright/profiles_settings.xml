@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <settings default="wtfpl">
+    <module2copyright>
+      <element module="All" copyright="wtfpl" />
+    </module2copyright>
+  </settings>
+</component>
