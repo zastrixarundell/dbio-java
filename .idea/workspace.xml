@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/UpvotedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/connections/DiscordConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/Dbio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/Dbio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/user/SettingsInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/user/SettingsInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/entities/DbioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/entities/DbioTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Dbio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Dbio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/SettingsInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/SettingsInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/online/UserInfoFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bio/discord/dbio/online/UserInfoFetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/DbioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/DbioTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +43,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bio.discord.dbio.entities" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="bio.discord.dbio.entities" />
     </key>
@@ -159,10 +154,14 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="555" y="244" width="804" height="677" key="#Project_Structure/0.0.1920.1163@0.0.1920.1163" timestamp="1588349270366" />
-    <state x="768" y="286" width="491" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1588358384321">
+    <state x="768" y="286" width="497" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1588359023814">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="768" y="286" width="491" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1163@0.0.1920.1163" timestamp="1588358384321" />
+    <state x="768" y="286" width="497" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1163@0.0.1920.1163" timestamp="1588359023814" />
+    <state x="727" y="443" width="465" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588358519768">
+      <screen x="0" y="0" width="1920" height="1163" />
+    </state>
+    <state x="727" y="443" width="465" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1163@0.0.1920.1163" timestamp="1588358519768" />
     <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588358447859">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
