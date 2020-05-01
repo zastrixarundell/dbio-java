@@ -49,4 +49,4 @@ User{discord=DiscordInformation{id='192300733234675722', username='Zastrix', ava
 ```
 
 ## Docs
-Coming ASAP when the project is released on the maven central.
+You can take a look at the docs [here](https://zastrixarundell.github.io/dbio/) for any needed information.
