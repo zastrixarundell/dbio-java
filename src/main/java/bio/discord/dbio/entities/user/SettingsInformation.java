@@ -16,9 +16,10 @@
 
 package bio.discord.dbio.entities.user;
 
+import bio.discord.dbio.Helpers;
 import bio.discord.dbio.entities.User;
 import com.google.gson.JsonObject;
-import org.joda.time.DateTime;
+import org.joda.time.Instant;
 
 import java.util.Date;
 
@@ -31,23 +32,31 @@ public class SettingsInformation
     private Date createdAt, birthday;
     private User.UserGender gender;
 
+    /**
+     * Default constructor for the SettingsInformation objects. Expects a JSON object
+     * which can be found on https://docs.discord.bio/ under payload.settings.
+     * @param settings A new SettingsInformation object.
+     */
     public SettingsInformation(JsonObject settings)
     {
         // The status field isn't user here as it's deprecated.
-        name = settings.get("name").toString();
-        userId = settings.get("user_id").toString();
+        name = Helpers.getNullableStringFromJson(settings.get("name"));
+        userId = Helpers.getNullableStringFromJson(settings.get("user_id"));
         verified = settings.get("verified").getAsInt() == 1;
         upvotes = settings.get("upvotes").getAsLong();
-        createdAt = new DateTime(settings.get("created_at").toString()).toDate();
-        description = settings.get("description").toString();
-        location = settings.get("location").toString();
+        createdAt = Instant.parse(Helpers.getNullableStringFromJson(settings.get("created_at"))).toDate();
+        description = Helpers.getNullableStringFromJson(settings.get("description"));
+        location = Helpers.getNullableStringFromJson(settings.get("location"));
         gender = decodeInt(settings.get("gender").getAsInt());
-        birthday = new DateTime(settings.get("birthday").toString()).toDate();
-        email = settings.get("email").toString();
-        occupation = settings.get("occupation").toString();
-        banner = settings.get("banner").toString();
+        birthday = Instant.parse(Helpers.getNullableStringFromJson(settings.get("birthday"))).toDate();
+        email = Helpers.getNullableStringFromJson(settings.get("email"));
+        occupation = Helpers.getNullableStringFromJson(settings.get("occupation"));
+        banner = Helpers.getNullableStringFromJson(settings.get("banner"));
         staff = settings.get("staff").getAsInt() == 1;
+        premium = settings.get("premium_status").getAsInt() == 1;
     }
+
+
 
     private User.UserGender decodeInt(int codename)
     {
@@ -212,8 +221,8 @@ public class SettingsInformation
                 ", verified=" + verified +
                 ", staff=" + staff +
                 ", upvotes=" + upvotes +
-                ", createdAt=" + createdAt.toString() +
-                ", birthday=" + birthday.toString() +
+                ", createdAt=" + createdAt +
+                ", birthday=" + birthday +
                 ", gender=" + gender +
                 '}';
     }

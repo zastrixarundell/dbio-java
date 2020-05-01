@@ -44,10 +44,9 @@ public class UserTests
     }
 
     @Test
-    public void canShowDiscordUserInformation()
+    public void canShowUserInfoAsString()
     {
-        User user = createFakeUser();
-        assert user.getDiscordInformation().getFlags() == 131136;
+        System.out.println(createFakeUser());
     }
 
     @Test
@@ -57,6 +56,15 @@ public class UserTests
         DiscordInformation discordInformation = user.getDiscordInformation();
 
         assert discordInformation.getAvatarUrl("png").equals("https://cdn.discordapp.com/avatars/192300733234675722/4b63183d13632ebcb89a79c3031f5105.png");
+    }
+
+    @Test
+    public void doesGenerateCorrectFullUsername()
+    {
+        User user = createFakeUser();
+        DiscordInformation information = user.getDiscordInformation();
+
+        assert information.getFullUserUsername().equals("Zastrix#9202");
     }
 
 }

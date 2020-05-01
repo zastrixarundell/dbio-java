@@ -26,15 +26,15 @@ public class DiscordInformation
 
     /**
      * Default constructor for the DiscordInformation objects. Expects a JSON object
-     * with elements of: `id`, `username`, `avatar`, `discriminator` and `public_flags`.
-     * @param discord `com.google.gson.JsonObject` containing all of the information.
+     * which can be found on https://docs.discord.bio/ under payload.discord.
+     * @param discord A new DiscordInformation object.
      */
     public DiscordInformation(JsonObject discord)
     {
-        id = discord.get("id").toString();
-        username = discord.get("username").toString();
-        avatar = discord.get("avatar").toString();
-        discriminator = discord.get("discriminator").toString();
+        id = discord.get("id").getAsString();
+        username = discord.get("username").getAsString();
+        avatar = discord.get("avatar").getAsString();
+        discriminator = discord.get("discriminator").getAsString();
         flags = discord.get("public_flags").getAsInt();
     }
 

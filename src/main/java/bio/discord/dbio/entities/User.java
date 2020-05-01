@@ -26,22 +26,39 @@ public class User
     private DiscordInformation discord;
     private SettingsInformation settings;
 
+    /**
+     * Get the user information from the payload object find on https://docs.discord.bio/.
+     * @param payload The object representing a user on discord.bio.
+     */
     public User(JsonObject payload)
     {
         discord = new DiscordInformation(payload.getAsJsonObject("discord"));
         settings = new SettingsInformation(payload.getAsJsonObject("settings"));
     }
 
+    /**
+     * Get all of the relevant Discord information for the user.
+     * @return DiscordInformation of the user.
+     */
     public DiscordInformation getDiscordInformation()
     {
         return discord;
+    }
+
+    /**
+     * Get all of the relevant discord.bio settings for the user.
+     * @return SettingsInformation of the user.
+     */
+    public SettingsInformation getSettings()
+    {
+        return settings;
     }
 
     @Override
     public String toString()
     {
         return "User{" +
-                "discord=" + discord.toString() +
+                "discord=" + discord +
                 ", settings=" + settings +
                 '}';
     }
