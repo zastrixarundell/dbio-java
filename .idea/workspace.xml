@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/UserInfoFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/DbioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/DbioTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/OnlineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/OnlineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/WebsiteInfoFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/online/WebsiteInfoFetcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <command value="mvn test -B" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DbioTest.getAsyncUserInfo">
+  <component name="RunManager" selected="JUnit.DbioTest.getAsyncUserCount (1)">
     <configuration name="DbioTest.getAsyncUserCount (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
@@ -151,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbioTest.getAsyncUserCount (1)" />
         <item itemvalue="JUnit.DbioTest.getAsyncUserInfo" />
         <item itemvalue="JUnit.OnlineTest.canGetInfoOnline" />
         <item itemvalue="JUnit.UserTests.avatarIsCorrectWithExtension" />
         <item itemvalue="JUnit.UserTests.canExtractFromPayload" />
-        <item itemvalue="JUnit.DbioTest.getAsyncUserCount (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -196,22 +193,22 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588365676596" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588366180090">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588367150764">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588366180090" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588366180089">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588367150764" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588367150762">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588366180089" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588366180088">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588367150762" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588367150762">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588366180088" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588366180089">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588367150762" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588367150763">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588366180089" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588367150763" />
     <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588366098682">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
