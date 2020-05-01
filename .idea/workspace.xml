@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Dbio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/Helpers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/UpvotedUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/User$UserGender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/connections/DbioConnections.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/connections/DiscordConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/DiscordInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/entities/user/SettingsInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bio/discord/dbio/online/UserInfoFetcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/DbioTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/OnlineTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bio/discord/dbio/entities/UserTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +51,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.DbioTest.getAsyncDiscordUserConnections">
     <configuration name="DbioTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
