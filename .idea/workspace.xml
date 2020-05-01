@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/entities/UserTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bio/discord/dbio/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserTests">
     <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.User" />
       <module name="discord-bio" />
@@ -56,8 +57,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.UserTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTests.canExtractFromPayload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.entities" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.entities.UserTests" />
+      <option name="METHOD_NAME" value="canExtractFromPayload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTests" />
+        <item itemvalue="JUnit.UserTests.canExtractFromPayload" />
         <item itemvalue="Application.User" />
       </list>
     </recent_temporary>
@@ -80,22 +114,22 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="768" y="286" width="491" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1163@0.0.1920.1163" timestamp="1588348062141" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588348516388">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588349082684">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588348516388" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588348516386">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588349082684" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588349082682">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588348516386" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588348516384">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588349082682" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588349082682">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588348516384" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588348516387">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588349082682" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588349082683">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588348516387" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588349082683" />
     <state x="443" y="160" width="1028" height="845" key="SettingsEditor" timestamp="1588346712325">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
