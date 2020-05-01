@@ -34,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -55,6 +56,8 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean package" />
+      <command value="mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V" />
+      <command value="mvn test -B" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.DbioTest.getAsyncDiscordUserConnections">
@@ -177,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588360995343" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588361253336">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588364940575">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253336" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588361253334">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588364940575" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588364940573">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253334" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588361253333">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588364940573" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588364940572">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253333" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588361253335">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588364940572" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588364940574">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588361253335" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588364940574" />
     <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588357914386">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
@@ -213,9 +216,9 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="443" y="160" width="1028" height="845" key="SettingsEditor/0.0.1920.1163@0.0.1920.1163" timestamp="1588346712325" />
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588361100400">
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup" timestamp="1588364916967">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588361100400" />
+    <state x="622" y="268" width="672" height="677" key="run.anything.popup/0.0.1920.1163@0.0.1920.1163" timestamp="1588364916967" />
   </component>
 </project>
