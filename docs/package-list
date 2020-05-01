@@ -1,0 +1,6 @@
+bio.discord.dbio
+bio.discord.dbio.entities
+bio.discord.dbio.entities.connections
+bio.discord.dbio.entities.user
+bio.discord.dbio.online
+bio.discord.dbio.tests
