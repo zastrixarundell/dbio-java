@@ -16,19 +16,24 @@
 
 package bio.discord.dbio;
 
+import bio.discord.dbio.entities.DbioConnections;
+import bio.discord.dbio.entities.User;
+import bio.discord.dbio.online.UserInfoFetcher;
+
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 public class Dbio
 {
 
-    public static CompletableFuture<Object> getUserDetails(String userId)
+    public static CompletableFuture<Optional<User>> getUserDetails(String userId)
     {
-        return CompletableFuture.completedFuture(userId);
+        return CompletableFuture.supplyAsync(() -> UserInfoFetcher.getSingletonInformation(userId));
     }
 
-    public static CompletableFuture<Object> getUserConnections(String userId)
+    public static CompletableFuture<Optional<DbioConnections>> getUserConnections(String userId)
     {
-        return CompletableFuture.completedFuture(userId);
+        return CompletableFuture.supplyAsync(() -> UserInfoFetcher.getUserInfoConnections(userId));
     }
 
     public static CompletableFuture<Object> getDiscordConnections(String userId)
@@ -36,9 +41,9 @@ public class Dbio
         return CompletableFuture.completedFuture(userId);
     }
 
-    public static CompletableFuture<Object> getTotalUserCount()
+    public static CompletableFuture<Optional<Integer>> getTotalUserCount()
     {
-        return CompletableFuture.completedFuture(10);
+        return CompletableFuture.supplyAsync(UserInfoFetcher::getTotalUserCount);
     }
 
     public static CompletableFuture<Object> getTopUpvoted()
