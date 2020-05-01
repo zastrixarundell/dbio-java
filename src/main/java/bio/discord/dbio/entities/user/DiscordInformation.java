@@ -57,16 +57,6 @@ public class DiscordInformation
     }
 
     /**
-     * Return the file of the the avatar which the user has. If you want to get the full avatar URL,
-     * see `getAvatarUrl()`
-     * @return The filename of the user avatar.
-     */
-    public String getAvatar()
-    {
-        return avatar;
-    }
-
-    /**
      * Get the discriminator of the user.
      * @return The discriminator of the user.
      */
@@ -76,12 +66,22 @@ public class DiscordInformation
     }
 
     /**
-     * Get the discord flags of the user.
-     * @return Discord flags of the user.
+     * Get the full Discord username with the username and discriminator
+     * @return Full username with the username and discriminator.
      */
-    public int getFlags()
+    public String getFullUserUsername()
     {
-        return flags;
+        return username + "#" + discriminator;
+    }
+
+    /**
+     * Return the file of the the avatar which the user has. If you want to get the full avatar URL,
+     * see `getAvatarUrl()`
+     * @return The filename of the user avatar.
+     */
+    public String getAvatar()
+    {
+        return avatar;
     }
 
     /**
@@ -93,6 +93,15 @@ public class DiscordInformation
     {
         extension = extension == null || extension.equals("") ? "png" : extension;
         return "https://cdn.discordapp.com/avatars/" + id + "/" + avatar + "." + extension;
+    }
+
+    /**
+     * Get the discord flags of the user.
+     * @return Discord flags of the user.
+     */
+    public int getFlags()
+    {
+        return flags;
     }
 
     @Override
