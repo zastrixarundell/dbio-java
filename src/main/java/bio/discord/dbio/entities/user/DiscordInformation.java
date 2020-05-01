@@ -31,10 +31,10 @@ public class DiscordInformation
      */
     public DiscordInformation(JsonObject discord)
     {
-        id = discord.get("id").getAsString();
-        username = discord.get("username").getAsString();
-        avatar = discord.get("avatar").getAsString();
-        discriminator = discord.get("discriminator").getAsString();
+        id = discord.get("id").toString();
+        username = discord.get("username").toString();
+        avatar = discord.get("avatar").toString();
+        discriminator = discord.get("discriminator").toString();
         flags = discord.get("public_flags").getAsInt();
     }
 

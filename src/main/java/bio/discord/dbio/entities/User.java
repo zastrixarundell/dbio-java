@@ -29,6 +29,7 @@ public class User
     public User(JsonObject payload)
     {
         discord = new DiscordInformation(payload.getAsJsonObject("discord"));
+        settings = new SettingsInformation(payload.getAsJsonObject("settings"));
     }
 
     public DiscordInformation getDiscordInformation()
@@ -41,7 +42,12 @@ public class User
     {
         return "User{" +
                 "discord=" + discord.toString() +
-                //", settings=" + settings +
+                ", settings=" + settings +
                 '}';
+    }
+
+    public enum UserGender
+    {
+        MALE, FEMALE, NONBINARY, UNDISCLOSED;
     }
 }
