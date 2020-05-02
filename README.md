@@ -54,4 +54,4 @@ Dbio.getUserDetails("192300733234675722").thenAcceptAsync(user -> user.ifPresent
 Would work just fine.
 
 ## Docs
-Coming ASAP when the project is released on the maven central.
+You can take a look at the docs [here](https://zastrixarundell.github.io/dbio/) for any needed information.
