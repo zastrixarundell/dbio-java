@@ -20,6 +20,11 @@ import bio.discord.dbio.entities.user.DiscordInformation;
 import bio.discord.dbio.entities.user.SettingsInformation;
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing a user.
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class User
 {
 
@@ -46,10 +51,22 @@ public class User
     }
 
     /**
-     * Get all of the relevant discord.bio settings for the user.
+     * Get all of the relevant discord.bio settings for the user. Will be removed in the
+     * following version.
      * @return SettingsInformation of the user.
      */
+    @Deprecated
     public SettingsInformation getSettings()
+    {
+        return settings;
+    }
+
+    /**
+     * Get all of the relevant discord.bio settings for the user. Will be removed in the
+     * following version.
+     * @return SettingsInformation of the user.
+     */
+    public SettingsInformation getSettingsInformation()
     {
         return settings;
     }

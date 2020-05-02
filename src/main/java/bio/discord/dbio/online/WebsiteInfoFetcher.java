@@ -30,6 +30,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * JavaClass which has the task of getting the information about the service of discord.bio. It is generally
+ * not a good idea to use this directly as the calls are sync, Take a look at {@link bio.discord.dbio.Dbio} for
+ * async calls.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class WebsiteInfoFetcher
 {
 

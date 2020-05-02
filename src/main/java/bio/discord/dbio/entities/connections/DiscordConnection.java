@@ -18,6 +18,12 @@ package bio.discord.dbio.entities.connections;
 
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing the connections a user has on their linked Discord account.
+ *
+ * @author zastrixarundell
+ * @version 0.0.0
+ */
 public class DiscordConnection
 {
 

@@ -18,6 +18,12 @@ package bio.discord.dbio;
 
 import com.google.gson.JsonElement;
 
+/**
+ * Java class which contains helper methods which are used in different classes.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class Helpers
 {
 

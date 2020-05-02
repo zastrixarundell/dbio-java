@@ -18,6 +18,13 @@ package bio.discord.dbio.entities.user;
 
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing the discord information a user has. This does not show the {@link bio.discord.dbio.entities.connections.DiscordConnection}
+ * information as that is from a different API endpoint.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class DiscordInformation
 {
 

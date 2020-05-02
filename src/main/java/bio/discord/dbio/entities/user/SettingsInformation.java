@@ -23,6 +23,12 @@ import org.joda.time.Instant;
 
 import java.util.Date;
 
+/**
+ * Java class representing all of the user settings a user has on discord.bio.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class SettingsInformation
 {
 
@@ -61,8 +67,6 @@ public class SettingsInformation
         staff = settings.get("staff").getAsInt() == 1;
         premium = settings.get("premium_status").getAsInt() == 1;
     }
-
-
 
     private User.UserGender decodeInt(int codename)
     {
