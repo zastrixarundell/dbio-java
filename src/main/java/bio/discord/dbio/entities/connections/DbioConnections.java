@@ -19,6 +19,12 @@ package bio.discord.dbio.entities.connections;
 import bio.discord.dbio.Helpers;
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing user connections on the discord.bio website.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class DbioConnections
 {
 

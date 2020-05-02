@@ -20,6 +20,12 @@ import bio.discord.dbio.Helpers;
 import bio.discord.dbio.entities.user.DiscordInformation;
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing the information when the end-user uses the topUpvoted API endpoint.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class UpvotedUser
 {
 

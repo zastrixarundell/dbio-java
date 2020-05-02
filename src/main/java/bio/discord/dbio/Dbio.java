@@ -27,6 +27,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * Java class representing the main features of the library. In most cases the code entry-points for the library are here.
+ * This is mainly focused on using {@link CompletableFuture} for async programming.
+ *
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class Dbio
 {
 

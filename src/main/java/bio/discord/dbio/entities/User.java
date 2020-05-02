@@ -20,6 +20,11 @@ import bio.discord.dbio.entities.user.DiscordInformation;
 import bio.discord.dbio.entities.user.SettingsInformation;
 import com.google.gson.JsonObject;
 
+/**
+ * Java class representing a user.
+ * @author zastrixarundell
+ * @since 0.0.0
+ */
 public class User
 {
 
