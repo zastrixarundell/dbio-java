@@ -37,7 +37,7 @@ Dependency:
 ```
 
 ### General usage:
-Currently there are 5 main functions for the 5 API endoiints. An example of fetching an info about a user would be:
+Currently there are 5 main functions for the 5 API endoiints. An example of fetching an info about a user sync would be:
 ```java
 Optional<User> userOptional = Dbio.getUserDetails("192300733234675722").get();
 
@@ -47,6 +47,11 @@ And the result output on the console would be:
 ```
 User{discord=DiscordInformation{id='192300733234675722', username='Zastrix', avatar='4b63183d13632ebcb89a79c3031f5105', discriminator='9202', flags=131136}, settings=SettingsInformation{name='zastrix', userId='192300733234675722', description='Backend software developer in Rails and Phoenix. I enjoy helping people out and creating discord bots. You can check out my work on github.com/zastrixarundell. I can as well sell my services of API management and Discord bots, PM me if you want. ', location='Novi Sad, Serbia', email='null', occupation='Backend Developer', banner='https://s3.eu-west-2.amazonaws.com/discord.bio/banners/192300733234675722', premium=false, verified=false, staff=false, upvotes=0, createdAt=Tue Apr 28 12:35:48 CEST 2020, birthday=Thu Sep 14 02:00:00 CEST 2000, gender=MALE}}
 ```
+But if you want to consume the user data async then:
+```java
+Dbio.getUserDetails("192300733234675722").thenAcceptAsync(user -> user.ifPresent(System.out::println));
+```
+Would work just fine.
 
 ## Docs
 Coming ASAP when the project is released on the maven central.

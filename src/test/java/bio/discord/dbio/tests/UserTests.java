@@ -57,7 +57,6 @@ public class UserTests
     {
         User user = createFakeUser();
         DiscordInformation discordInformation = user.getDiscordInformation();
-
         assertEquals("https://cdn.discordapp.com/avatars/192300733234675722/4b63183d13632ebcb89a79c3031f5105.png", discordInformation.getAvatarUrl("png"));
     }
 
@@ -66,7 +65,6 @@ public class UserTests
     {
         User user = createFakeUser();
         DiscordInformation information = user.getDiscordInformation();
-
         assertEquals("Zastrix#9202", information.getFullUserUsername());
     }
 

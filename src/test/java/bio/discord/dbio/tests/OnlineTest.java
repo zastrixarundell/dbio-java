@@ -38,7 +38,6 @@ public class OnlineTest
     public void canShowOnlineUserInfo()
     {
         Optional<User> user = UserInfoFetcher.getSingletonInformation("192300733234675722");
-
         user.ifPresent(System.out::println);
     }
 
@@ -52,7 +51,6 @@ public class OnlineTest
     public void canShowUserInfoConnections()
     {
         Optional<DbioConnections> connectionsOptional = UserInfoFetcher.getUserInfoConnections("192300733234675722");
-
         connectionsOptional.ifPresent(System.out::println);
     }
 

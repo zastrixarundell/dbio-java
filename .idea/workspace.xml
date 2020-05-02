@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359edc28-06d3-492c-bce1-e639e7843428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/entities/connections/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/entities/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/entities/user/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/online/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/DbioTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/OnlineTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/UserTests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/bio/discord/dbio/tests/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/overview-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/DbioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bio/discord/dbio/tests/DbioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +66,7 @@
       <command value="mvn test -B" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DbioTest.canShowUserInfo">
+  <component name="RunManager" selected="JUnit.UserTests.doesGenerateCorrectFullUsername">
     <configuration name="DbioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
@@ -96,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbioTest.canShowUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbioTest.getAsyncUserCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +92,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
-      <option name="METHOD_NAME" value="canShowUserInfo" />
+      <option name="METHOD_NAME" value="getAsyncUserCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbioTest.getAsyncTopUpvotedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbioTest.getAsyncUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
@@ -122,28 +108,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.DbioTest" />
-      <option name="METHOD_NAME" value="getAsyncTopUpvotedUsers" />
+      <option name="METHOD_NAME" value="getAsyncUserInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OnlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="discord-bio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
-      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.OnlineTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTests.avatarIsCorrectWithExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="discord-bio" />
       <extension name="coverage">
         <pattern>
@@ -153,18 +124,35 @@
       </extension>
       <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
       <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.UserTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="avatarIsCorrectWithExtension" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTests.doesGenerateCorrectFullUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discord-bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bio.discord.dbio.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bio.discord.dbio.tests" />
+      <option name="MAIN_CLASS_NAME" value="bio.discord.dbio.tests.UserTests" />
+      <option name="METHOD_NAME" value="doesGenerateCorrectFullUsername" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DbioTest.canShowUserInfo" />
-        <item itemvalue="JUnit.UserTests" />
-        <item itemvalue="JUnit.OnlineTest" />
+        <item itemvalue="JUnit.UserTests.doesGenerateCorrectFullUsername" />
+        <item itemvalue="JUnit.UserTests.avatarIsCorrectWithExtension" />
+        <item itemvalue="JUnit.DbioTest.getAsyncUserInfo" />
         <item itemvalue="JUnit.DbioTest" />
-        <item itemvalue="JUnit.DbioTest.getAsyncTopUpvotedUsers" />
+        <item itemvalue="JUnit.DbioTest.getAsyncUserCount" />
       </list>
     </recent_temporary>
   </component>
@@ -205,22 +193,22 @@
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
     <state x="740" y="340" width="428" height="484" key="FileChooserDialogImpl/0.0.1920.1163@0.0.1920.1163" timestamp="1588365676596" />
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588369990368">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom" timestamp="1588413722833">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588369990368" />
-    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588369990367">
+    <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1163@0.0.1920.1163" timestamp="1588413722833" />
+    <state width="1874" height="315" key="GridCell.Tab.0.center" timestamp="1588413722832">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588369990367" />
-    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588369990366">
+    <state width="1874" height="315" key="GridCell.Tab.0.center/0.0.1920.1163@0.0.1920.1163" timestamp="1588413722832" />
+    <state width="1874" height="315" key="GridCell.Tab.0.left" timestamp="1588413722831">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588369990366" />
-    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588369990367">
+    <state width="1874" height="315" key="GridCell.Tab.0.left/0.0.1920.1163@0.0.1920.1163" timestamp="1588413722831" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right" timestamp="1588413722833">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588369990367" />
+    <state width="1874" height="315" key="GridCell.Tab.0.right/0.0.1920.1163@0.0.1920.1163" timestamp="1588413722833" />
     <state width="1874" height="388" key="GridCell.Tab.1.bottom" timestamp="1588367621727">
       <screen x="0" y="0" width="1920" height="1163" />
     </state>
