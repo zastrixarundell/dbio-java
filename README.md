@@ -5,6 +5,9 @@ A java library for the discord.bio library endpoint.
 
 ![discord.bio homepage](https://raw.githubusercontent.com/zastrixarundell/dbio/master/assets/home.png)
 
+# Important notice
+There is an undocumented update in the API for discord.bio and the current version doesn't work and will continue not to work  until the new API is documented.
+
 ## Why use this?
 This is an async library filled with CompletableFutures and Optional making it easy to use but data-safe as well.
 
