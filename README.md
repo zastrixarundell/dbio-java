@@ -1,7 +1,7 @@
 # Dbio Java library
 A java library for the discord.bio library endpoint.
 
-[![Build Status](https://travis-ci.com/zastrixarundell/dbio.svg?branch=master)](https://travis-ci.com/zastrixarundell/dbio) ![Latest version](https://img.shields.io/github/v/release/zastrixarundell/dbio)
+[![Build Status](https://travis-ci.com/zastrixarundell/dbio.svg?branch=master)](https://travis-ci.com/zastrixarundell/dbio-java) ![Latest version](https://img.shields.io/github/v/release/zastrixarundell/dbio)
 
 ![discord.bio homepage](https://raw.githubusercontent.com/zastrixarundell/dbio/master/assets/home.png)
 
@@ -31,8 +31,8 @@ Dependency:
 ```xml
 <dependency>
     <groupId>com.github.zastrixarundell</groupId>
-    <artifactId>dbio</artifactId>
-    <version>Tag</version> <!-- replace this with the current version -->
+    <artifactId>dbio-java</artifactId>
+    <version>RELEASE</version> <!-- replace this with the current version -->
 </dependency>
 ```
 
